@@ -22,5 +22,10 @@
 	"browser_action": {
 		"default_icon": "images/menu.png",
 		"default_popup": "popup.html"
-	}
+	},
+	
+	"content_scripts": [ {
+		 "matches": ["http://*/*"],
+		 "js" : ["tabcloud-contentscript.js"] 
+	} ]
 }
